@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*@font-face {*/
+/*    font-family: 'Open Sans';*/
+/*    font-weight: 700;*/
+/*    src: url("./fonts/open_sans_bold.ttf") ;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Open Sans';*/
+/*    font-weight: 600;*/
+/*    src: url("./fonts/open_sans_semi_bold.ttf") ;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Open Sans';*/
+/*    font-weight: 400;*/
+/*    src: url("./fonts/open_sans_regular.ttf") ;*/
+/*}*/
+
+
+#downloads-modal::backdrop {
+    background: rgb(0 0 0 / .4);
+}
+
+#how-to-use-modal::backdrop {
+    background: rgb(0 0 0 / .4);
+}
+
+#download-started-modal::backdrop {
+    background: rgb(0 0 0 / .4);
+}
+
+#credits-modal::backdrop {
+    background: rgb(0 0 0 / .4);
+}
+
+.not-expanded {
+    right: -11.0625rem;
+}
+
+.expanded {
+    right: 0 !important;
+}
+
+.mobile-nav-transition {
+    transition: right 200ms linear;
+}
+
+.touchable-button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media (min-width: 840px) {
+    .logo-text {
+        display: block;
+    }
+}
+
+.feature-panel {
+    @apply flex flex-col border-gray-600 border-2 rounded-xl p-5 gap-4 items-center;
+}
+
+.feature-header {
+    @apply flex flex-col gap-2.5;
+}
+
+.feature-header-img {
+    @apply text-orange-400 fill-current h-10;
+}
+
+.feature-header-text {
+    @apply text-base text-gray-100 font-semibold;
+}
+
+.feature-body {
+    @apply text-gray-100 text-sm font-semibold text-center pt-0.5;
+}
