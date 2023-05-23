@@ -1,6 +1,7 @@
 #!/bin/bash
 
 mkdir -p ./dist
+npx tailwindcss -i ./input.css -o ./build.css
 cp ./CNAME ./dist
 cp ./index.html ./dist
 cp ./build.css ./dist
