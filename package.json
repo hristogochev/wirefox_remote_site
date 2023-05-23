@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./src/build.css --watch",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/build.css --watch & serve ./src",
     "build": "./build.sh",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
@@ -19,6 +19,6 @@
     "tailwindcss": "^3.1.8"
   },
   "dependencies": {
-
+    "serve": "^14.2.0"
   }
 }

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 mkdir -p ./dist
-npx tailwindcss -i ./src/input.css -o ./src/build.css
+npx tailwindcss -i ./src/input.css -o /src/build.css --minify
 cp ./CNAME ./dist
 cp ./src/index.html ./dist
 cp ./src/build.css ./dist
