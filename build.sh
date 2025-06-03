@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -rf ./dist
 mkdir -p ./dist
 npx tailwindcss -i ./src/input.css -o ./dist/build.css --minify
 cp ./CNAME ./dist
